@@ -1,0 +1,10 @@
+{
+  "name": "cursor-honcho",
+  "description": "Persistent Honcho memory for Cursor. Hermes/dsh-aligned: capture every turn, inject with TTL refresh.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["honcho", "memory", "hooks", "cursor"],
+  "author": {
+    "name": "cursor-honcho"
+  }
+}

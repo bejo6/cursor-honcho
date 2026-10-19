@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "hooks": {
+    "sessionStart": [{ "command": "node ./scripts/honcho.mjs sessionStart", "timeout": 20 }],
+    "beforeSubmitPrompt": [{ "command": "node ./scripts/honcho.mjs beforeSubmitPrompt", "timeout": 12 }],
+    "afterAgentResponse": [{ "command": "node ./scripts/honcho.mjs afterAgentResponse", "timeout": 8 }],
+    "stop": [{ "command": "node ./scripts/honcho.mjs stop", "timeout": 20 }],
+    "preCompact": [{ "command": "node ./scripts/honcho.mjs preCompact", "timeout": 20 }],
+    "sessionEnd": [{ "command": "node ./scripts/honcho.mjs sessionEnd", "timeout": 20 }]
+  }
+}

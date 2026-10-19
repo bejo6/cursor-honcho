@@ -1,0 +1,21 @@
+{
+  "name": "cursor-honcho",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Persistent Honcho memory for Cursor — Hermes/dsh-aligned: capture every turn, inject with TTL refresh",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test",
+    "plugin:install": "node src/cli.mjs install",
+    "plugin:install-hooks": "node src/cli.mjs install-hooks",
+    "plugin:uninstall": "node src/cli.mjs uninstall",
+    "status": "node src/cli.mjs status"
+  },
+  "dependencies": {
+    "@honcho-ai/sdk": "^2.5.1"
+  }
+}
+

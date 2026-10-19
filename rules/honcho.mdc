@@ -1,0 +1,12 @@
+---
+description: Honcho memory identity for Cursor
+alwaysApply: true
+---
+
+# Honcho
+
+Hooks already save this Cursor chat and inject the user peer's own memory each turn (Hermes/dsh-style). Do not call `add_messages_to_session` for it.
+
+Identity (user peer, AI peer, workspace) comes from the Honcho block in this chat and from `hosts.cursor` in the shared Honcho config. Do not invent or switch peers.
+
+Use the Honcho block already in this chat. Do not run `node`, and do not read `node_modules`, the plugin directory, hook logs, or the config file.
